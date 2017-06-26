@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>TarasovDmitriy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.libs.css">
   </head>
@@ -11,13 +11,14 @@
     <header class="header_container">
       <div class="header">
         <div class="header_logo animated bounceInLeft">
-          <h1>Tarasov Dmitriy</h1>
+          <h1>Тарасов Дмитрий</h1>
         </div>
         <nav class="header_navigation animated bounceInRight">
           <ul>
-            <li><a class="anchor" href="#Skils">Skils</a></li>
-            <li><a class="anchor" href="#Portfolio">Portfolio</a></li>
-            <li><a class="anchor" href="#Contact">Contact</a></li>
+            <li><a class="anchor" href="#about_me">Обо мне</a></li>
+            <li><a class="anchor" href="#my_skils">Технологии</a></li>
+            <li><a class="anchor" href="#my_portfolio">Портфолио</a></li>
+            <li><a class="anchor" href="#my_contacts">Контакты	</a></li>
           </ul>
         </nav>
         <div id="nav_icon"><span></span><span></span><span></span><span></span></div>
@@ -26,64 +27,103 @@
     <main class="page_main">
       <div class="start_page_container">
         <section class="start_page">
-          <h2 class="animated bounceInUp">&lt;HELLO/&gt;</h2>
-          <p class="animated bounceInUp">My name is Tarasov Dmitriy and i'm a Front End developer</p><span class="animated bounceInUp">witch creates beautiful and responsive websites by using last web technologies</span><a class="anchor down_button animated bounceInUp" href="#Skils">▽</a>
+          <h2 class="animated fadeInDown">&lt;Добро пожаловать/&gt;</h2>
+          <p class="animated fadeInUp">Меня зовут Тарасов Дмитрий.<br> HTML-верстальщик, а также начинающий Front-End разработчик.</p><a class="anchor down_button animated bounceInUp" href="#about_me">▽</a>
         </section>
       </div>
-      <div class="about_me_container" id="Skils">
+      <div class="about_me_container" id="about_me">
         <section class="about_me">
-          <div class="about_me_card animated"><img class="avatar" src="img/avatar.jpg" alt="avatar">
-            <p>
-              Age: 22 <br>
-              Location: Kharkiv, Ukraine
-            </p>
+          <h2 class="section_title animated">Немного обо мне</h2><img class="avatar animated" src="img/avatar.jpg" alt="avatar">
+          <div class="my_info animated"><span>Возраст: 22</span><span>Город: Харьков, Украина</span>
+            <p>Рад приветствовать вас на моей странице-портфолио. Версткой начал заниматься с конца 2016 года. Освоил основные для этого направления технологи достаточно хорошо для того что бы мои сайты были адаптивными, кроссбраузерными, четко соответствовали макету, а код был валидным, чистым, структурированым и понятным как для себя так и для разработчиков корорые будут работать с ним.</p>
           </div>
-          <div class="attainment_card">
-            <ul>
-              <li>HTML / CSS</li>
-              <li>Java Script, Jquery</li>
-              <li>Adaptive and Responsive Design</li>
-              <li>Adobe Photoshop</li>
-              <li>BEM</li>
-              <li>HTML preprocessor Jade(Pug) , CSS preprocessor Sass</li>
-              <li>Pixel Perfect</li>
-              <li>Gulp, Bover, NodeJS</li>
-            </ul>
-          </div>
-          <div class="skils_card animated">
-            <div class="pie-title-center" id="html5" data-percent="80">
-              <p class="html5">HTML5</p><span class="pie-value"></span>
-            </div>
-            <div class="pie-title-center" id="css" data-percent="80">
-              <p class="css">CSS</p><span class="pie-value"></span>
-            </div>
-            <div class="pie-title-center" id="js" data-percent="60">
-              <p class="js">JS</p><span class="pie-value"></span>
-            </div>
-          </div>
-        </section><a class="anchor down_button" href="#Portfolio">▽</a>
+        </section><a class="anchor down_button" href="#my_skils">▽</a>
       </div>
-      <div class="portfolio_container" id="Portfolio">
-        <h2>My works</h2>
-        <section class="portfolio">
-          <div class="my_work_card"><img src="img/cm.jpg" alt=""></div>
-          <div class="my_work_card"><img src="img/cm.jpg" alt=""></div>
-          <div class="my_work_card"><img src="img/cm.jpg" alt=""></div>
-          <div class="my_work_card"><img src="img/cm.jpg" alt=""></div>
+      <div class="my_skils_container" id="my_skils">
+        <section class="my_skils">
+          <h2 class="section_title animated flipInX">Технологии</h2>
+          <div class="main_skils">
+            <div class="html">
+              <div class="pie-title-center" id="html5" data-percent="80">
+                <p class="html5">HTML5</p><span class="pie-value"></span>
+              </div>
+              <p class="about_skil">Код HTML пишу с четкой структурой. Использую теги по своему прямому назначению. В качестве препроцессора использую Jade(Pug).</p>
+            </div>
+            <div class="css">
+              <div class="pie-title-center" id="css" data-percent="80">
+                <p class="css">CSS</p><span class="pie-value"></span>
+              </div>
+              <p class="about_skil">Стилизую все что только можно. Еще и добавлю анимацию. Как препроцессор для CSS выбрал Sass. Адаптивности достигаю используя медиа запросы, flex-box или сеточку Bootstrap.</p>
+            </div>
+            <div class="js">
+              <div class="pie-title-center" id="js" data-percent="60">
+                <p class="js">JS</p><span class="pie-value"></span>
+              </div>
+              <p class="about_skil">Знаю основы JS. Циклы, массивы, работа с DOM деревом и тд..Могу реализовать простую логику на чистом Javascript. Хорошо знаком с Jquery. Подключаю чужие скрипты или переделываю их под свои нужды.</p>
+            </div>
+          </div>
+          <div class="other_skils animated">
+            <ul>
+              <li>Gulp, Bower</li>
+              <li>Pixel Perfect</li>
+              <li>BEM</li>
+              <li>Английский (на уровне чтения документации)</li>
+              <li>Photoshop (на уровне резки макета)</li>
+              <li>Основы GIT</li>
+              <li>Emmet</li>
+              <li>Responsive/adaptive верстка</li>
+            </ul>
+          </div><a class="anchor down_button" href="#my_portfolio">▽</a>
+        </section>
+      </div>
+      <div class="portfolio_container" id="my_portfolio">
+        <section class="my_portfolio">
+          <h2 class="section_title animated flipInX">Мои работы</h2>
+          <div class="portfolio_cards">
+            <div class="card">
+              <figure class="back"><img src="img/cm.jpg" width="100%" height="100%"></figure>
+              <figure class="front">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptates eaque nihil, aspernatur omnis animi, recusandae beatae sunt voluptas id eum quibusdam voluptatum quam nam voluptate reprehenderit dolores praesentium hic!</p><a href="vk.com">Перейти на страницу</a>
+              </figure>
+            </div>
+            <div class="card">
+              <figure class="back"><img src="img/cm.jpg" width="100%" height="100%"></figure>
+              <figure class="front">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptates eaque nihil, aspernatur omnis animi, recusandae beatae sunt voluptas id eum quibusdam voluptatum quam nam voluptate reprehenderit dolores praesentium hic!</p><a href="vk.com">Перейти на страницу</a>
+              </figure>
+            </div>
+            <div class="card">
+              <figure class="back"><img src="img/cm.jpg" width="100%" height="100%"></figure>
+              <figure class="front">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptates eaque nihil, aspernatur omnis animi, recusandae beatae sunt voluptas id eum quibusdam voluptatum quam nam voluptate reprehenderit dolores praesentium hic!</p><a href="vk.com">Перейти на страницу</a>
+              </figure>
+            </div>
+            <div class="card">
+              <figure class="back"><img src="img/cm.jpg" width="100%" height="100%"></figure>
+              <figure class="front">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptates eaque nihil, aspernatur omnis animi, recusandae beatae sunt voluptas id eum quibusdam voluptatum quam nam voluptate reprehenderit dolores praesentium hic!</p><a href="vk.com">Перейти на страницу</a>
+              </figure>
+            </div>
+            <div class="card">
+              <figure class="back"><img src="img/cm.jpg" width="100%" height="100%"></figure>
+              <figure class="front">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptates eaque nihil, aspernatur omnis animi, recusandae beatae sunt voluptas id eum quibusdam voluptatum quam nam voluptate reprehenderit dolores praesentium hic!</p><a href="vk.com">Перейти на страницу</a>
+              </figure>
+            </div>
+          </div>
         </section>
       </div>
     </main>
-    <footer class="page_footer">
-      <div class="contact_me" id="Contact">
-        <div class="footer_name">
-          <h2>Contact me</h2>
-        </div>
+    <footer class="footer_container" id="my_contacts">
+      <section class="contact_me">
+        <h2 class="section_title animated flipInX">Связь со мной</h2>
         <div class="footer_links">
           <ul>
-            <li><a href="https://vk.com/dimko0o0o"><img class="soc" src="img/vk.png"></a></li>
+            <li><a href="https://vk.com/dimko0o0o">Димка Тарасов</a></li>
+            <li><a href="">+380935787365</a></li>
           </ul>
         </div>
-      </div>
+      </section>
     </footer>
     <script src="js/libs.js"></script>
     <script src="js/main.js"></script>
