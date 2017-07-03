@@ -18,7 +18,6 @@
             <li onclick="tabs()">На главную</li>
             <li onclick="tabs()">Обо мне</li>
             <li onclick="tabs();circle_anim();">Технологии</li>
-            <li onclick="tabs()">Портфолио</li>
             <li onclick="tabs()">Контакты	</li>
           </ul>
         </nav>
@@ -29,7 +28,7 @@
       <div class="start_page_container containers tab_active">
         <section class="start_page">
           <div class="cell">
-            <h2 class="animated fadeInDown">&lt;Добро пожаловать/&gt;</h2>
+            <h2 class="animated fadeInUp">&lt;Добро пожаловать/&gt;</h2>
             <p class="animated fadeInUp">Меня зовут Тарасов Дмитрий.<br> HTML-верстальщик, а также начинающий Front-End разработчик.</p>
           </div>
         </section>
@@ -41,7 +40,7 @@
               <h2 class="section_title animated flipInX">Немного обо мне</h2>
             </div><img class="avatar" src="img/avatar.jpg" alt="avatar">
             <div class="my_info"><span>Возраст: 22 <br></span><span>Город: Харьков, Украина <br></span>
-              <p>Рад приветствовать вас на моей странице-портфолио. Версткой начал заниматься с конца 2016 года. Освоил основные для этого направления технологи достаточно хорошо для того что бы мои сайты были адаптивными, кроссбраузерными, четко соответствовали макету, а код был валидным, чистым, структурированым и понятным как для себя так и для разработчиков которые будут работать с ним.</p>
+              <p>Рад приветствовать вас на моей странице-резюме. Версткой начал заниматься с конца 2016 года. Освоил основные для этого направления технологи достаточно хорошо для того что бы, мои сайты были адаптивными, кроссбраузерными, четко соответствовали макету, а код был валидным, чистым, структурированым и понятным как для себя, так и для разработчиков, которые будут работать с ним.</p>
             </div>
           </div>
         </section>
@@ -61,13 +60,13 @@
               </div>
               <div class="css">
                 <div class="pie-title-center" id="css" data-percent="80">
-                  <p class="css">CSS </p><br><span class="pie-value"></span>
+                  <p class="css">CSS </p><span class="pie-value"></span>
                 </div>
                 <p class="about_skil">Стилизую все что только можно. Еще и добавлю анимацию. Как препроцессор для CSS выбрал Sass. Адаптивности 	достигаю используя медиа запросы, flex-box или сеточку Bootstrap.</p>
               </div>
               <div class="js">
                 <div class="pie-title-center" id="js" data-percent="60">
-                  <p class="js">JS </p><br><span class="pie-value"></span>
+                  <p class="js">JS </p><span class="pie-value"></span>
                 </div>
                 <p class="about_skil">Знаю основы JS. Циклы, массивы, работа с DOM деревом и тд..Могу реализовать простую логику на чистом Javascript. Хорошо знаком с Jquery. Подключаю чужие скрипты или переделываю их под свои нужды.</p>
               </div>
@@ -87,45 +86,6 @@
           </div>
         </section>
       </div>
-      <div class="portfolio_container containers tab_none">
-        <section class="my_portfolio animated fadeIn">
-          <div class="title">
-            <h2 class="section_title animated flipInX">Мои работы</h2>
-          </div>
-          <div class="portfolio_cards">
-            <div class="card">
-              <figure class="back"><img src="img/cm.jpg" alt=""></figure>
-              <figure class="front">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptates eaque nihil, aspernatur omnis animi, recusandae beatae sunt voluptas id eum quibusdam voluptatum quam nam voluptate reprehenderit dolores praesentium hic!</p><a href="vk.com">Перейти</a>
-              </figure>
-            </div>
-            <div class="card">
-              <figure class="back"><img src="img/cm.jpg" alt=""></figure>
-              <figure class="front">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptates eaque nihil, aspernatur omnis animi, recusandae beatae sunt voluptas id eum quibusdam voluptatum quam nam voluptate reprehenderit dolores praesentium hic!</p><a href="vk.com">Перейти</a>
-              </figure>
-            </div>
-            <div class="card">
-              <figure class="back"><img src="img/cm.jpg" alt=""></figure>
-              <figure class="front">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptates eaque nihil, aspernatur omnis animi, recusandae beatae sunt voluptas id eum quibusdam voluptatum quam nam voluptate reprehenderit dolores praesentium hic!</p><a href="vk.com">Перейти</a>
-              </figure>
-            </div>
-            <div class="card">
-              <figure class="back"><img src="img/cm.jpg" alt=""></figure>
-              <figure class="front">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptates eaque nihil, aspernatur omnis animi, recusandae beatae sunt voluptas id eum quibusdam voluptatum quam nam voluptate reprehenderit dolores praesentium hic!</p><a href="vk.com">Перейти</a>
-              </figure>
-            </div>
-            <div class="card">
-              <figure class="back"><img src="img/cm.jpg" alt=""></figure>
-              <figure class="front">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptates eaque nihil, aspernatur omnis animi, recusandae beatae sunt voluptas id eum quibusdam voluptatum quam nam voluptate reprehenderit dolores praesentium hic!</p><a href="vk.com">Перейти</a>
-              </figure>
-            </div>
-          </div>
-        </section>
-      </div>
       <div class="contact_me_container containers tab_none">
         <section class="contact_me animated fadeIn">
           <div class="cell">
@@ -134,8 +94,9 @@
             </div>
             <div class="contacts">
               <ul>
-                <li><a href="https://vk.com/dimko0o0o">Вконтакте</a></li>
-                <li><a href="#">+380935787365</a></li>
+                <li>Email <br><span>dimkatarasov8@gmail.com</span></li>
+                <li>Мобильный <br><span>0935787365</span></li>
+                <li>Вконтакте <br><span><a href="https://vk.com/dimko0o0o">Димка Тарасов</a></span></li>
               </ul>
             </div>
           </div>
